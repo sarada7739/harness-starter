@@ -158,7 +158,7 @@ CLAUDE.md              # 付録Aのテンプレートで既存のスタブを上
 | `designer` | `opus` | Read, Grep, Glob, Write | 詳細設計、インターフェース定義、タスク分解案 | coding, (unity) |
 | `impl-l0` | `haiku` | Read, Write, Edit, Bash, Glob, Grep | 定型作業（L0） | coding, (unity) |
 | `impl-l1` | `sonnet` | 同上 | 仕様確定済みの単機能（L1） | coding, (unity) |
-| `impl-l2` | `sonnet` | 同上 | 複数ファイル横断・中規模リファクタ（L2） | coding, (unity) |
+| `impl-l2` | `opus` | 同上 | 複数ファイル横断・中規模リファクタ（L2） | coding, (unity) |
 | `impl-l3` | `opus` | 同上 | アーキテクチャに触れる実装（L3） | coding, (unity) |
 | `impl-l4` | `claude-fable-5-1` | 同上 | 探索的・長時間の実装（L4） | coding, (unity) |
 | `impl-ui` | `claude-fable-5-1` | 同上 | 視覚忠実度を要求するUI実装（V2） | coding, visual |
@@ -177,7 +177,7 @@ CLAUDE.md              # 付録Aのテンプレートで既存のスタブを上
 name: impl-l2
 description: 複数ファイルにまたがる中規模の実装・リファクタを担当する。タスク難易度L2で使う。
 tools: Read, Write, Edit, Bash, Glob, Grep
-model: sonnet
+model: opus
 ---
 あなたは実装担当です。作業前に .harness/rules/coding.md を読むこと。
 渡されたタスクファイル（.harness/tasks/T-xxx.md）の受入条件だけを満たしてください。
